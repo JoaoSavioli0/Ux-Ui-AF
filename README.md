@@ -1,21 +1,5 @@
 # Testes funcionais Caixa Branca UI/UX
 
-### O código foi devidamente documentado?
-Não, o código não apresenta comentários para a maioria das funções que implementa. O ideal seria descrever o retorno dos métodos chamados e o proósito das classes e resumir o fluxo principal do código.
-
-### As variáveis e constantes possuem nomenclatura?
-Sim, o código utiliza nomenclaturas coerentes com suas funções, como login, senha, nome, result, verificarUsuario e conectarDB
-
-### Existem legibilidade e organização no código?
-Pouco, não é uma boa prática manter a função de conexão em uma classe como a de usuário, a falta de comentários e espaçamento entre as linhas dificulta a legibilidade, a declaração da query sql não está padronizada e a separação por linha dificulta a legibilidade. Não existe tratamento de erro para as exceções.
-
-### Todos os NullPointers foram tratados?
-Não, o método para iniciar a conexão com o banco, getConnection, pode retornar null caso a conexão não tenha sucesso, fazendo com que o método conectarDB retorne null, e cause um erro posteriormente.
-
-### As conexões utilizadas foram fechadas?
-Não, as conexões abertas não foram fechadas, isso pode gerar consumo de recursos desnecessários ou exceder o limite de conexões com o banco.
-
-
 ## Notação de Grafo de Fluxo
 ![Descrição da imagem](imagens/Diagrama.jpg)
 
